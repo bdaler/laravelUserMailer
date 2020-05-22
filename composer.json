@@ -1,0 +1,31 @@
+{
+    "name": "bdaler/usermailer",
+    "description": "Library allowing Users to send email with their own SMTP settings in Laravel",
+    "keywords": [
+        "laravel"
+    ],
+    "type": "project",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "bdaler",
+            "email": "dalerkbtut@gmail.com"
+        }
+    ],
+    "minimum-stability": "stable",
+    "autoload": {
+        "psr-4": {
+            "Bdaler\\UserMailer\\": "src/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Bdaler\\UserMailer\\UserMailerServiceProvider"
+            ]
+        }
+    },
+    "require": {
+        "swiftmailer/swiftmailer": "^6.0"
+    }
+}
